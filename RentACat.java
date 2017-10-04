@@ -17,8 +17,9 @@ public class RentACat {
      */
     
     public boolean returnCat(Cat c) {
-	// TODO
-	return false;
+		// TODO
+
+		return false;
     }
 
     /**
