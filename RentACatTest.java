@@ -66,8 +66,11 @@ public class RentACatTest
 
 		Mockito.when(c1.getName()).thenReturn("Joe");
 		Mockito.when(c1.getId()).thenReturn(1);
-		Mockito.when(c1.getName()).thenReturn("Gary");
-		Mockito.when(c1.getId()).thenReturn(1);
+		Mockito.when(c2.getName()).thenReturn("Gary");
+		Mockito.when(c2.getId()).thenReturn(1);
+
+		cats.add(c1);
+		cats.add(c2);
 
 		boolean actual = rc.catExists(1, cats);
 
@@ -85,6 +88,9 @@ public class RentACatTest
 		Mockito.when(c1.getId()).thenReturn(1);
 		Mockito.when(c1.getName()).thenReturn("Gary");
 		Mockito.when(c1.getId()).thenReturn(2);
+
+		cats.add(c1);
+		cats.add(c2);
 
 		boolean actual = rc.catExists(1, cats);
 

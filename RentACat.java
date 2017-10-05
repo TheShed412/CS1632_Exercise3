@@ -92,9 +92,16 @@ public class RentACat {
     
     public boolean catExists(int id, ArrayList<Cat> catList) {
 		
-		
+		boolean found = false;
 
-		return false;
+		for(Cat cat : catList){
+			int lId = cat.getId();
+			if(lId == id) {
+				found = true;
+			}
+		}
+
+		return found;
     }
 
     /**
